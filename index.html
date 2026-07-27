@@ -1,1 +1,127 @@
+Com certeza! Deixei o projeto mais completo e profissional, adicionando recursos interativos em JavaScript, novos estilos e melhorias de usabilidade.🛠️ O que foi adicionado:
+Calculadora Interativa de Pegada Hídrica: Permite ao usuário simular o consumo total de água virtual com base nos seus hábitos diários.
+Filtro/Busca de Atalhos do VS Code: Um campo de pesquisa em tempo real para encontrar atalhos rapidamente.
+Responsividade Aprimorada (Media Queries): Layout adaptado para celulares e tablets.
+Interatividade em JavaScript (script.js): Um novo arquivo de script simples e funcional.
+1. index.html
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Água Virtual & Produtividade VS Code</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img scr="imagem-blog.png" alt=""Pessoas em um escritório moderno analisando dados visuais sobre consumo de água virtual em telas digitais."">
 
+<header>
+<h1>🌊 Monitor de Água Virtual</h1>
+<p>Conscientização ambiental + Ateliê de Produtividade no VS Code</p>
+</header>
+
+<nav>
+<a href="#conceito">O Conceito</a>
+<a href="#dados">Pegada Hídrica</a>
+<a href="#calculadora">Calculadora</a>
+<a href="#vscode">Atalhos VS Code</a>
+</nav>
+
+<div class="container">
+
+<section id="conceito" class="card">
+<h2>O que é a Água Virtual?</h2>
+<p>
+Trata-se da quantidade invisível de água utilizada em todas as etapas da cadeia produtiva de um item. De roupas a eletrônicos, tudo consome água antes de chegar às suas mãos.
+</p>
+</section>
+
+<section id="dados" class="card">
+<h2>Pegada Hídrica de Produtos do Dia a Dia</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Água Virtual Necessária</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 folha de papel A4</td>
+<td><strong>10 litros</strong></td>
+</tr>
+<tr>
+<td>1 xícara de chá</td>
+<td><strong>30 litros</strong></td>
+</tr>
+<tr>
+<td>1 garrafa de cerveja (250 ml)</td>
+<td><strong>74 litros</strong></td>
+</tr>
+<tr>
+<td>1 hambúrguer (150g)</td>
+<td><strong>2.400 litros</strong></td>
+</tr>
+<tr>
+<td>1 par de sapatos de couro</td>
+<td><strong>8.000 litros</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="calculadora" class="card">
+<h2>🧮 Simule seu Consumo Semanal</h2>
+<p>Insira a quantidade de itens que você consome por semana:</p>
+
+<div class="calc-grid">
+<label>
+Folhas de Papel A4:
+<input type="number" id="input-papel" min="0" value="0">
+</label>
+<label>
+Xícaras de Chá:
+<input type="number" id="input-cha" min="0" value="0">
+</label>
+<label>
+Hambúrgueres:
+<input type="number" id="input-hamburguer" min="0" value="0">
+</label>
+</div>
+
+<button id="btn-calcular">Calcular Água Virtual</button>
+
+<div id="resultado-calc" class="resultado-box hidden">
+Seu consumo estimado é de <span id="total-litros">0</span> litros de água por semana!
+</div>
+</section>
+
+<section id="vscode" class="card highlight">
+<h2>⚡ Atalhos Produtivos no VS Code</h2>
+<p>Digite para buscar um comando específico:</p>
+
+<input type="text" id="busca-atalho" placeholder="Pesquisar atalho (ex: deletar, linha, comentar)...">
+
+<ul class="shortcuts" id="lista-atalhos">
+<li><code>Ctrl + Shift + L</code> — Seleciona <strong>todas as ocorrências</strong> do texto/palavra selecionada.</li>
+<li><code>Alt + Z</code> — Ativa/Desativa o <strong>Word Wrap</strong> (quebra automática de linha).</li>
+<li><code>Ctrl + Shift + K</code> — <strong>Deleta a linha inteira</strong> onde o cursor está posicionado.</li>
+<li><code>Ctrl + Enter</code> — Insere uma <strong>nova linha abaixo</strong> sem quebrar a linha atual.</li>
+<li><code>Ctrl + Shift + Enter</code> — Insere uma <strong>nova linha acima</strong>.</li>
+<li><code>Ctrl + G</code> — Vai direto para um <strong>número de linha específico</strong>.</li>
+<li><code>Ctrl + K Ctrl + C</code> — <strong>Comenta</strong> o bloco selecionado.</li>
+<li><code>Ctrl + K Ctrl + U</code> — <strong>Descomenta</strong> o bloco selecionado.</li>
+<li><code>Ctrl + \</code> — <strong>Divide a tela do editor</strong> em duas colunas.</li>
+</ul>
+</section>
+
+</div>
+
+<footer>
+<p>Projeto de Conscientização Hídrica & Desenvolvimento Web © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>]
